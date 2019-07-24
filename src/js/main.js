@@ -27,6 +27,10 @@ const ranges = player.querySelectorAll('.player__slider');
 
 
 // Build our functions//
+function togglePlay() {
+  const method = video.paused ? 'play' : 'pause';
+  video[method]();
+}
 
 //Hook up the elements listeners //
 
